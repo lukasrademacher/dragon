@@ -129,16 +129,36 @@
               "angle": 0,
               "id": "df40a16e-f8bd-4ff6-b4a0-c308d181f54b",
               "z": 9,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Tampering",
+                  "title": "Injection",
+                  "description": "Integrity: Veränderung der Daten durch Injection.",
+                  "threatId": "395ce963-eb8b-4204-a674-d94a27253dda"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Repudiation",
+                  "title": "Löschen von Daten",
+                  "description": "Löschen von Logindaten durch Internen",
+                  "threatId": "e1d9b748-e404-4b37-945f-0e67a5d0a60b"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Log Datenbank"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
