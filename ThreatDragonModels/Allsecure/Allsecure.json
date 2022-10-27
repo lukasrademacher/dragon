@@ -123,8 +123,8 @@
                 "height": 80
               },
               "position": {
-                "x": 414,
-                "y": 1
+                "x": 306,
+                "y": 23
               },
               "angle": 0,
               "id": "df40a16e-f8bd-4ff6-b4a0-c308d181f54b",
@@ -255,14 +255,18 @@
               },
               "smooth": true,
               "source": {
-                "x": 611,
-                "y": 164
+                "x": 875,
+                "y": 65
               },
               "target": {
                 "x": 759,
                 "y": 649
               },
               "vertices": [
+                {
+                  "x": 637,
+                  "y": 237
+                },
                 {
                   "x": 746,
                   "y": 542
@@ -280,14 +284,22 @@
               },
               "smooth": true,
               "source": {
-                "x": 433,
-                "y": 195
+                "x": 671,
+                "y": 136
               },
               "target": {
                 "x": 334,
                 "y": 674
               },
               "vertices": [
+                {
+                  "x": 565,
+                  "y": 87
+                },
+                {
+                  "x": 430,
+                  "y": 281
+                },
                 {
                   "x": 456,
                   "y": 463
@@ -560,6 +572,10 @@
                 {
                   "x": 265,
                   "y": 180
+                },
+                {
+                  "x": 384,
+                  "y": 213
                 }
               ],
               "id": "80f0e7cf-c908-4e11-8ba0-db4c1468ca2a",
@@ -864,8 +880,8 @@
               },
               "vertices": [
                 {
-                  "x": 461,
-                  "y": 141
+                  "x": 387,
+                  "y": 123
                 }
               ],
               "id": "d5f8a7bf-ca22-442c-8b8a-2ed2024d9e29",
@@ -1011,6 +1027,75 @@
                 }
               ],
               "z": 36,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 681,
+                "y": 1
+              },
+              "angle": 0,
+              "id": "8b3a05e9-d7f8-430d-9778-916ffdcec152",
+              "z": 37,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Export"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "f643388e-143b-4e5e-bc53-a4b69c58108c"
+              },
+              "target": {
+                "id": "8b3a05e9-d7f8-430d-9778-916ffdcec152"
+              },
+              "vertices": [
+                {
+                  "x": 630,
+                  "y": 131
+                }
+              ],
+              "id": "9738bcdb-e4f9-450e-82f4-c0f98fd6ef39",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 38,
               "hasOpenThreats": false,
               "attrs": {
                 ".marker-target": {
