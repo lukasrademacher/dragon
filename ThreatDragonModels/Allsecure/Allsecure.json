@@ -1,6 +1,8 @@
 {
   "summary": {
-    "title": "Allsecure"
+    "title": "Allsecure",
+    "owner": "Lukas Rademacher",
+    "description": "Analyse des Allsecure OTT Systems."
   },
   "detail": {
     "contributors": [],
@@ -1248,6 +1250,7 @@
           "width": 2038
         }
       }
-    ]
+    ],
+    "reviewer": "Niklas Kuckuck"
   }
 }
