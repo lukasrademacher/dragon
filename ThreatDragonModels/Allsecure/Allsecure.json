@@ -34,7 +34,8 @@
                   "type": "Denial of service",
                   "title": "DOS auf Loginseite",
                   "description": "DOS auf Loginseite durch zu viele Anfragen.\n\nMedium Priority: Weil leicht zu provoziren aber keine Gefährdung für Daten.",
-                  "threatId": "af5ff85f-5ffc-49ff-94b0-63cebb9aaf8b"
+                  "threatId": "af5ff85f-5ffc-49ff-94b0-63cebb9aaf8b",
+                  "mitigation": "Verzögerung der Loginversuche.\nSperren von accounts bei fehlgeschlagenen Versuchen.\n\n=> low Priority"
                 }
               ],
               "attrs": {
@@ -144,12 +145,13 @@
               "threats": [
                 {
                   "status": "Open",
-                  "severity": "High",
+                  "severity": "Low",
                   "modelType": "STRIDE",
                   "type": "Tampering",
                   "title": "Injection",
                   "description": "Integrity: Veränderung der Daten durch Injection.\n\nHigh Priority: Kann leicht übersehen werden im implementierung.",
-                  "threatId": "395ce963-eb8b-4204-a674-d94a27253dda"
+                  "threatId": "395ce963-eb8b-4204-a674-d94a27253dda",
+                  "mitigation": "Statische Codeanalyse\nAusführen von Pentests\n\n=> Low Priority"
                 },
                 {
                   "status": "Open",
