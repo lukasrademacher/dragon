@@ -236,17 +236,28 @@
               "angle": 0,
               "id": "f643388e-143b-4e5e-bc53-a4b69c58108c",
               "z": 14,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "description": "",
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "title": "Spoofing Telefonnummern",
+                  "type": "Spoofing",
+                  "description": "Spoofing der Telefonnummern",
+                  "threatId": "eabe158a-ef0f-4bde-9fe6-1f38f827b85d"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "2-Faktor-Authe\nntifizierungsdie\nnst"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
