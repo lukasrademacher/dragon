@@ -159,8 +159,9 @@
                   "modelType": "STRIDE",
                   "type": "Repudiation",
                   "title": "Löschen von Daten",
-                  "description": "Löschen von Logindaten durch Internen\n\nMedium Priority: Hohe Auswirkungen aber unwarscheinlich da Insider nötig.",
-                  "threatId": "e1d9b748-e404-4b37-945f-0e67a5d0a60b"
+                  "description": "Löschen von Logdaten durch Internen\n\nMedium Priority: Hohe Auswirkungen aber unwarscheinlich da Insider nötig.",
+                  "threatId": "e1d9b748-e404-4b37-945f-0e67a5d0a60b",
+                  "mitigation": "Aufnahme in SIEM."
                 },
                 {
                   "status": "Open",
@@ -169,7 +170,8 @@
                   "type": "Information disclosure",
                   "description": "Einsehen von logdaten durch unbefugten internen\n\nlow Priority: Geringe Auswirkungen und Interner nötig.",
                   "title": "Einsehen von Logdaten",
-                  "threatId": "dacddbf9-f26a-4658-9382-136d38fa30f3"
+                  "threatId": "dacddbf9-f26a-4658-9382-136d38fa30f3",
+                  "mitigation": "Aufnahme in SIEM."
                 }
               ],
               "attrs": {
@@ -201,21 +203,23 @@
               "threats": [
                 {
                   "status": "Open",
-                  "severity": "High",
+                  "severity": "Medium",
                   "modelType": "STRIDE",
                   "type": "Denial of service",
                   "title": "DOS auf Nachrichtenversand",
                   "description": "DOS auf Nachrichtenversand: Es werden zu viele Nachrichten provoziert\n\nHigh  Priority: Einfach zu provozieren, legt den ganzen Dienst lahm.",
-                  "threatId": "67d5e091-2ad3-4476-aa11-3d3b879165ec"
+                  "threatId": "67d5e091-2ad3-4476-aa11-3d3b879165ec",
+                  "mitigation": "limitieren von Nachrichtenversand pro Login\n=> medium"
                 },
                 {
                   "status": "Open",
-                  "severity": "High",
+                  "severity": "Low",
                   "modelType": "STRIDE",
                   "type": "Information disclosure",
                   "title": "Man in The Middle",
                   "description": "Man in The Middle zum Abgreifen der Tokens\n\nHigh  Priority: Man benötigt position zwischen Absender und Empfänger, dafür ist die Auswirkung aber groß.",
-                  "threatId": "f39fe4d6-3126-4712-8e1c-14c2055d4962"
+                  "threatId": "f39fe4d6-3126-4712-8e1c-14c2055d4962",
+                  "mitigation": "TLS Verbindung.\n\n=> Low"
                 }
               ],
               "attrs": {
@@ -279,7 +283,8 @@
                   "title": "Spoofing Telefonnummern",
                   "type": "Spoofing",
                   "description": "Spoofing der Telefonnummern\n\nMedium Priority: Schwirigere Umsetzung dafür große Auswirkungen durch Identitätsdiebstahl.",
-                  "threatId": "eabe158a-ef0f-4bde-9fe6-1f38f827b85d"
+                  "threatId": "eabe158a-ef0f-4bde-9fe6-1f38f827b85d",
+                  "mitigation": "Hardware Token (RSA-Token) für login."
                 }
               ],
               "attrs": {
@@ -1132,7 +1137,8 @@
                   "type": "Information disclosure",
                   "title": "Einsehen von Exportdaten",
                   "description": "Einsehen von gespeicherten Exportdaten durch unbefugte interne\n\nLow  Priority: Management Report enthällt keine gefährlichen Daten und Interner nötig.",
-                  "threatId": "b81c7b7a-fbee-454c-b0e5-3c8611f25c4a"
+                  "threatId": "b81c7b7a-fbee-454c-b0e5-3c8611f25c4a",
+                  "mitigation": "Verschlüsseln des Exports."
                 },
                 {
                   "status": "Mitigated",
@@ -1141,7 +1147,7 @@
                   "type": "Tampering",
                   "title": "Verändern von Daten",
                   "description": "Verändern des management Exports\n\nLow  Priority: Interner Zugriff nötig, verändert nur Statistik.",
-                  "mitigation": "Digitalen Signaturen",
+                  "mitigation": "Ist Gelöst: Digitalen Signaturen",
                   "threatId": "013254a6-9b54-447c-a728-0465045f9371"
                 },
                 {
@@ -1151,7 +1157,8 @@
                   "title": "Unbefugte Ausführung des Exports",
                   "description": "Unbefugte Ausführung des Exports\n\nLow  Priority: Management Report enthällt keine gefährlichen Daten und Interner nötig.",
                   "type": "Elevation of privilege",
-                  "threatId": "00d09ac0-8706-4c87-bf46-22dec7e883b8"
+                  "threatId": "00d09ac0-8706-4c87-bf46-22dec7e883b8",
+                  "mitigation": "Authentifizierung für die Ausführung."
                 }
               ],
               "attrs": {
