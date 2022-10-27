@@ -148,6 +148,15 @@
                   "title": "Löschen von Daten",
                   "description": "Löschen von Logindaten durch Internen",
                   "threatId": "e1d9b748-e404-4b37-945f-0e67a5d0a60b"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Information disclosure",
+                  "description": "Einsehen von logdaten durch unbefugten internen",
+                  "title": "Einsehen von Logdaten",
+                  "threatId": "dacddbf9-f26a-4658-9382-136d38fa30f3"
                 }
               ],
               "attrs": {
