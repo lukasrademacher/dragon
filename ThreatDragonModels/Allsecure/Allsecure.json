@@ -1079,16 +1079,37 @@
               "angle": 0,
               "id": "8b3a05e9-d7f8-430d-9778-916ffdcec152",
               "z": 37,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Low",
+                  "modelType": "STRIDE",
+                  "type": "Information disclosure",
+                  "title": "Einsehen von Exportdaten",
+                  "description": "Einsehen von Exportdaten durch unbefugte interne",
+                  "threatId": "b81c7b7a-fbee-454c-b0e5-3c8611f25c4a"
+                },
+                {
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "modelType": "STRIDE",
+                  "type": "Tampering",
+                  "title": "Verändern von Daten",
+                  "description": "Verändern des management Exports",
+                  "mitigation": "Digitalen Signaturen",
+                  "threatId": "013254a6-9b54-447c-a728-0465045f9371"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Export"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
