@@ -25,16 +25,27 @@
               "angle": 0,
               "id": "babcc76a-4f3a-4a77-8408-280ceb18a01f",
               "z": 1,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Denial of service",
+                  "title": "DOS auf Loginseite",
+                  "description": "DOS auf Loginseite durch zu viele Anfragen.",
+                  "threatId": "af5ff85f-5ffc-49ff-94b0-63cebb9aaf8b"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Login System"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -184,16 +195,36 @@
               "angle": 0,
               "id": "c74c816f-6e9d-4454-80aa-d77226a5edae",
               "z": 12,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "modelType": "STRIDE",
+                  "type": "Denial of service",
+                  "title": "DOS auf Nachrichtenversand",
+                  "description": "DOS auf Nachrichtenversand: Es werden zu viele Nachrichten provoziert",
+                  "threatId": "67d5e091-2ad3-4476-aa11-3d3b879165ec"
+                },
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "modelType": "STRIDE",
+                  "type": "Information disclosure",
+                  "title": "Man in The Middle",
+                  "description": "Man in The Middle zum Abgreifen der Tokens",
+                  "threatId": "f39fe4d6-3126-4712-8e1c-14c2055d4962"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Mobile Phone\nOTT Service"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -1098,7 +1129,7 @@
                   "modelType": "STRIDE",
                   "type": "Information disclosure",
                   "title": "Einsehen von Exportdaten",
-                  "description": "Einsehen von Exportdaten durch unbefugte interne",
+                  "description": "Einsehen von gespeicherten Exportdaten durch unbefugte interne",
                   "threatId": "b81c7b7a-fbee-454c-b0e5-3c8611f25c4a"
                 },
                 {
@@ -1110,6 +1141,15 @@
                   "description": "Verändern des management Exports",
                   "mitigation": "Digitalen Signaturen",
                   "threatId": "013254a6-9b54-447c-a728-0465045f9371"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Low",
+                  "modelType": "STRIDE",
+                  "title": "Unbefugte Ausführung des Exports",
+                  "description": "Unbefugte Ausführung des Exports",
+                  "type": "Elevation of privilege",
+                  "threatId": "00d09ac0-8706-4c87-bf46-22dec7e883b8"
                 }
               ],
               "attrs": {
