@@ -1044,7 +1044,7 @@
                 "height": 100
               },
               "position": {
-                "x": 681,
+                "x": 678,
                 "y": 1
               },
               "angle": 0,
@@ -1105,6 +1105,31 @@
                   "class": "connection hasNoOpenThreats isInScope"
                 }
               }
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 242,
+                "y": 13
+              },
+              "target": {
+                "x": 434,
+                "y": 185
+              },
+              "vertices": [
+                {
+                  "x": 237,
+                  "y": 121
+                }
+              ],
+              "id": "590374fe-80ad-4637-bf83-62f3b4668ef5",
+              "z": 39,
+              "attrs": {}
             }
           ]
         },
