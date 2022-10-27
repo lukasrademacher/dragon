@@ -1,0 +1,16 @@
+{
+  "summary": {
+    "title": "Allsecure"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "OneTimeToken",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "diagramType": "STRIDE",
+        "id": 0
+      }
+    ]
+  }
+}
